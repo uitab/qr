@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>UITAB > Rastreo de Mascotas QR (BRIDGE)</title>
+  <title></title>
   <style>
       body {
         background-color: lightblue;
         text-align: center;
       }
+      
       .lds-ring {
   display: inline-block;
   position: relative;
@@ -43,16 +44,16 @@
     transform: rotate(360deg);
   }
 }
-  </style>
 
-  
+  </style>
 </head>
 <body>
   <script>
-    const AS_URL_BASE = 'https://script.google.com/macros/s/AKfycbzZbvFXpL7_Kf0nFOAwkSXtO4LVkS_b3HKZJDRcHxq5i6ASSPpL49IYotKI8o5jadvj/exec';
+    const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbzZbvFXpL7_Kf0nFOAwkSXtO4LVkS_b3HKZJDRcHxq5i6ASSPpL49IYotKI8o5jadvj/exec";
     
     var url = document.location.href;
     var k = url.substr(url.lastIndexOf("k=")+2);
+    
     if(k){
       fetch(AS_URL_BASE+'?k='+k)
       .then(r => r.text())
@@ -67,15 +68,9 @@
     }
 
   </script>
-  <div class="lds-ring">
-    <div>
-    </div>
-    <div>
-    </div>
-    <div>
-    </div>
-    <div>
-    </div>
-  </div>
+  
+  <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  
+  
 </body>
 </html>
