@@ -1,2 +1,2 @@
-# qr
-uitab
+UITAB
+Qr for PETs
